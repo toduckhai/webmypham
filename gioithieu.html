@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="\assets\images\logodep.jpg" type="image/x-icon">
+  <title>Giới thiệu</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="http://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
+</head>
+<body>
+  <header class="py-3 bg-white fixed-top border-bottom border-dark">
+    <div class="d-flex container align-items-center justify-content-between">
+        <div class="">
+          <a href="index.html">
+            <img class="header__logo" src="./assets/images/logodep.jpg" height="70px" alt="">
+          </a>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li class="nav-item m-1"  onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="index.html">TRANG CHỦ</a></li>
+                <li class="nav-item m-1"><a class="nav-link text-dark nav-item__after" href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li class="nav-item m-1 position-relative header__item_3" onmouseover="add_li_hover(this), show()" onmouseout="remove_li_hover(this), hide()"><a class="nav-link text-dark" href="sanpham.html">SẢN PHẨM <i class="fas fa-caret-down"></i></a>
+                    <div class="position-absolute container bg-white border-dark border mega-content d-none" style="z-index: 3;top: calc(100% + 29px);left: -430%; width: 1200px;animation: Growth ease-in .3s;">
+                        <div class="row py-4 px-1">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Dưỡng da</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Mặt nạ</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem dưỡng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem chống nắng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Xịt khoáng</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Làm sạch</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa rửa mặt</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu tẩy trang</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem tẩy trắng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước tẩy trắng</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Trang điểm nền</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Kem lót</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem tạo hiệu ứng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem che khuyết điểm</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Phấn phủ bột</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Trang điểm mắt môi</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Son thỏi</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Son dưỡng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Màu mắt</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Viền mắt</a></li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+            
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Chăm sóc cơ thể</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Sửa tắm</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa dưỡng thể</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước hoa</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu gội,xả</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Dược mỹ phẩm</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Dưỡng ẩm da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dưỡng trắng da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Chống lão hóa da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Tẩy tế bào chết</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Sức khỏe - Làm đẹp</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Tinh dầu</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước tẩy trang</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Thực phẩm làm đẹp</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước hoa</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Thực phẩm chức năng</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Vitamin - Khoáng chất</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Chống não hóa da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa dưỡng thể</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu tẩy trang</a></li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <a href=""><img src="./assets/images/banner_menu_1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="tintuc.html">TIN TỨC</a></li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="search p-3 col-md-4 position-relative">
+                <i class="fas fa-search icon-search"></i>
+                <div class="position-absolute input-search">
+                    <form action="">
+                        <input class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                    </form>
+                </div>
+            </div>
+            <div class="user p-3 col-md-4 position-relative">
+                <i class="fas fa-user icon-user"></i>
+                <div class="auth-form nav position-absolute">
+                    <ul class="navbar-nav m-auto w-100">
+                      <li class="nav-item"><a class="nav-link text-dark pl-1" href="register.html"><i class="icon-plus fas fa-user-plus"></i> Đăng ký</a></li>
+                      <li class="nav-item"><a class="nav-link text-dark pl-1" href="login.html"><i class="far fa-user-circle"></i> Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bag p-3 col-md-4 position-relative">
+                <i class="fas fa-shopping-bag icon-bag"><sup>0</sup></i>
+                <div class="no_card position-absolute">
+                    <figure class="border border">
+                        <img src="./assets/images/no-cart.png" alt="">
+                        <figcaption class="text-center bg-white p-2">Chưa có sản phẩm</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+  </header>
+
+  <div class="container-fluid p-3" style="margin-top: 102px;background-color: #f0f0f0;">
+    <div class="container">
+      <h5 class=""><a href="index.html">Trang chủ</a> / Giới thiệu</h5>
+    </div>
+  </div>
+
+  <div class="mt-5 container p-5">
+    <h1 class="text-center p-5">Về chúng tôi</h1>
+    <div class="p-5">
+      <h5 class>TRONG 3 NĂM CỬA HÀNG CỦA CHÚNG TÔI ĐÃ TRỞ THÀNH MỘT TRONG NHỮNG CỬA HÀNG LỚN NHẤT CHO NỮ TRÊN TOÀN THẾ GIỚI.</h5>
+      <p>
+        Chúng tôi cung cấp cho khách hàng của chúng tôi với giá tốt nhất và hệ thống chiết khấu tuyệt vời. Khách hàng thường xuyên của chúng tôi nhận được ưu đãi đặc biệt, thẻ quà tặng và các ưu điểm tích lũy khác. Bộ sưu tập của cửa hàng chúng tôi được làm giàu với các mặt hàng và thương hiệu mới. Chúng tôi cộng tác với các thương hiệu nổi tiếng thế giới và duy trì các thương hiệu trẻ.
+      </p>
+      <p>
+        Phạm vi của chúng tôi sản phẩm bao gồm hơn 5000 mặt hàng và hàng chục các thương hiệu nước hoa tốt nhất. Bạn có thể tìm thấy hương thơm tươi hoặc nước hoa vani ngọt ngào. Sứ mệnh của cửa hàng chúng tôi là cung cấp cho mọi phụ nữ một phong cách và hương thơm độc đáo. Phương châm của chúng tôi là viết tắt của mỗi người phụ nữ là đẹp và xứng đáng với những điều tuyệt vời để có. Sự thoải mái là rất quan trọng trong các sản phẩm của chúng tôi khi chúng tôi đánh giá cao khách hàng của mình và tạo ra bộ sưu tập của chúng tôi với tình yêu và sự chú ý đến từng chi tiết.
+      </p>
+      <div class="row mt-5 d-flex align-content-around text-center">
+        <div class="col-md-3">
+          <h1 class="counter-value">225</h1>
+          <p>Thương hiệu</p>
+        </div>
+
+        <div class="col-md-3">
+          <h1 class="counter-value">2314</h1>
+          <p>Khách hàng</p>
+        </div>
+
+        <div class="col-md-3">
+          <h1 class="counter-value">14</h1>
+          <p>Cửa hàng</p>
+        </div>
+
+        <div class="col-md-3">
+          <h1 class="counter-value">623</h1>
+          <p>Quà thẻ đã được cấp</p>
+        </div>
+      </div>
+  </div>
+      
+  </div>
+  <div class="container">
+    <hr>
+    <div class="row text-center py-5">
+      <div class="col-md-4">
+        <h5>Miễn phí vận chuyển</h5>
+        <p>Tin tốt! Bây giờ chúng tôi gửi miễn phí trong phạm vi Hoa Kỳ và Canada! Chúng tôi sử dụng các công ty vận chuyển UPS và USPS.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Hỗ trợ 24/7</h5>
+        <p>Chúng tôi có sẵn suốt ngày đêm! Nếu bạn có bất kỳ câu hỏi nào hoặc muốn đặt hàng, vui lòng liên hệ với chúng tôi!</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Quá trình thanh toán</h5>
+        <p>Chúng tôi có nhiều phương thức thanh toán khác nhau: chúng tôi lấy thẻ tín dụng và thẻ ghi nợ, thanh toán qua Paypal, séc và chuyển khoản ngân hàng.</p>
+      </div>
+    </div>
+    <hr>
+  </div> 
+  
+  <div class="container p-5">
+    <h2 class="text-center p-5">CHÚNG TÔI CÓ THỂ LÀM GÌ</h2>
+    <div class="p-5">
+      Chúng tôi tạo ra các mô hình mới, hợp tác với các thương hiệu và nhà mỹ phẩm, làm một số mặt hàng được đặt làm và cung cấp cho khách hàng của chúng tôi một loạt các dịch vụ đi kèm. Thưởng thức lướt trang web của chúng tôi để biết thêm về chúng tôi!
+    </div>
+
+    <div class="px-5">
+      <div class="">
+        <span>Chất lượng</span>
+        <div class="bg-secondary position-relative mt-2" style="height: 5px;width: 100%;">
+          <div class="position-absolute" style="width: 100%;height: 5px;background-color: #28e0c8;">
+            <span class="position-absolute" style="right: 0;top: -20px;">100%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <span>Dịch vụ</span>
+        <div class="bg-secondary position-relative mt-2" style="height: 5px;width: 100%;">
+          <div class="position-absolute" style="width: 90%;height: 5px;background-color: #28e0c8;">
+            <span class="position-absolute" style="right: 0;top: -20px;">90%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <span>Hỗ trợ</span>
+        <div class="bg-secondary position-relative mt-2" style="height: 5px;width: 100%;">
+          <div class="position-absolute" style="width: 80%;height: 5px;background-color: #28e0c8;">
+            <span class="position-absolute" style="right: 0;top: -20px;">80%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark py-4">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-5">
+                <h4 class="text-white">Fanpage</h4>
+                <a href=""><i class="icon-facebook rounded fab fa-facebook"></i></a>
+                <a href=""><i class="icon-twitter rounded fab fa-twitter-square"></i></a>
+                <a href=""><i class="icon-google-plus rounded fab fa-google-plus"></i></a>
+                <a href=""><i class="icon-wechat rounded fab fa-weixin"></i></a>
+            </div>
+
+            <div class="col-md-7 rounded">
+                <h4 class="text-white">Đăng ký nhận thông tin</h4>
+                <p class="text-white">Hãy cho chúng tôi email của bạn và bạn sẽ được cập nhật hàng ngày với các sự kiện mới nhất, chi tiết!</p>
+                <div class="bg-white d-flex">
+                    <input class="w-100 border-0 pl-3" type="text" placeholder="Nhập email để đăng ký">
+                    <button class="btn col-md-2" style="background-color: turquoise;">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row pt-3">
+            <div class="col-md-3">
+                <h4 class="text-white">Về chúng tôi</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-map-marker-alt"></i> Thái Nguyên</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-phone"></i> 0368960711</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-envelope"></i> toduckhai001@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Tin tức</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Về chúng tôi</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Tuyển dụng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Giới thiệu cửa hàng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Thời gian làm việc</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Câu hỏi thường gặp</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Hỏi đáp</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Mẹo sử dụng mỹ phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Sản phẩm hot</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Chính sách</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách bảo mật</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách bảo hành</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách vận chuyển</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách đổi hàng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Quy định thanh toán</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    function add_li_hover(x){
+      $(x).addClass("nav-item__after");
+    }
+
+    function remove_li_hover(x){
+        $(x).removeClass("nav-item__after");
+    }
+
+    function hide(){
+      $(".mega-content").addClass("d-none");
+    }
+
+    function show(){
+        $(".mega-content").removeClass("d-none");
+    }
+
+    $(document).ready(function( $ ) {
+        $('.counter-value').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+  </script>
+</body>
+</html>

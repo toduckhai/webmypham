@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="\assets\images\logodep.jpg" type="image/x-icon">
+  <title>Giới thiệu</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="http://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
+</head>
+<body>
+  <header class="py-3 bg-white fixed-top border-bottom border-dark">
+    <div class="d-flex container align-items-center justify-content-between">
+        <div class="">
+          <a href="index.html">
+            <img class="header__logo" src="./assets/images/logodep.jpg" height="70px" alt="">
+          </a>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="index.html">TRANG CHỦ</a></li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li class="nav-item m-1 position-relative header__item_3" onmouseover="show()" onmouseout="hide()"><a class="nav-link text-dark nav-item__after" href="sanpham.html">SẢN PHẨM <i class="fas fa-caret-down"></i></a>
+                    <div class="position-absolute container bg-white border-dark border mega-content d-none" style="z-index: 3;top: calc(100% + 29px);left: -430%; width: 1200px;animation: Growth ease-in .3s;">
+                        <div class="row py-4 px-1">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Dưỡng da</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Mặt nạ</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem dưỡng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem chống nắng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Xịt khoáng</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Làm sạch</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa rửa mặt</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu tẩy trang</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem tẩy trắng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước tẩy trắng</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Trang điểm nền</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Kem lót</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem tạo hiệu ứng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem che khuyết điểm</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Phấn phủ bột</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Trang điểm mắt môi</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Son thỏi</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Son dưỡng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Màu mắt</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Viền mắt</a></li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+            
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Chăm sóc cơ thể</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Sửa tắm</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa dưỡng thể</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước hoa</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu gội,xả</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Dược mỹ phẩm</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Dưỡng ẩm da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dưỡng trắng da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Chống lão hóa da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Tẩy tế bào chết</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Sức khỏe - Làm đẹp</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Tinh dầu</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước tẩy trang</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Thực phẩm làm đẹp</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước hoa</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Thực phẩm chức năng</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Vitamin - Khoáng chất</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Chống não hóa da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa dưỡng thể</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu tẩy trang</a></li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <a href=""><img src="./assets/images/banner_menu_1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="tintuc.html">TIN TỨC</a></li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="search p-3 col-md-4 position-relative">
+                <i class="fas fa-search icon-search"></i>
+                <div class="position-absolute input-search">
+                    <form action="">
+                        <input class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                    </form>
+                </div>
+            </div>
+            <div class="user p-3 col-md-4 position-relative">
+                <i class="fas fa-user icon-user"></i>
+                <div class="auth-form nav position-absolute">
+                    <ul class="navbar-nav m-auto w-100">
+                        <li class="nav-item"><a class="nav-link text-dark pl-1" href="register.html"><i class="icon-plus fas fa-user-plus"></i> Đăng ký</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark pl-1" href="login.html"><i class="far fa-user-circle"></i> Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bag p-3 col-md-4 position-relative">
+                <i class="fas fa-shopping-bag icon-bag"><sup>0</sup></i>
+                <div class="no_card position-absolute">
+                    <figure class="border border">
+                        <img src="./assets/images/no-cart.png" alt="">
+                        <figcaption class="text-center bg-white p-2">Chưa có sản phẩm</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+  </header>
+
+  <div class="container-fluid p-3" style="margin-top: 102px;background-color: #f0f0f0;">
+    <div class="container">
+      <h5 class=""><a href="index.html">Trang chủ</a> / Tất cả sản phẩm</h5>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>Danh mục</h3>
+        <nav class="subnav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-dark" href="">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="">Giới thiệu</a></li>
+            <li class="pl-3 nav-item row">
+              <a class="nav-link text-dark col-md-10" href="">Sản phẩm</a>
+              <div class="w-25 p-2 col-md-2 btn-toggle-lv1">
+                <i class="fas fa-angle-right fa float-right"></i>
+              </div>
+            </li>
+            <ul class="ml-3 navbar-nav menu-lv1">
+              <li class="pl-3 nav-item row">
+                <a class="nav-link text-dark col-md-10" href="">Dưỡng da</a>
+                <div class="w-25 p-2 col-md-2 btn-toggle-lv-2_0">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_0">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Mặt nạ</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Kem dưỡng</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Kem chống nắng</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Xịt khoáng</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Làm sạch</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_1">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_1">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Sữa rửa mặt</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Dầu tẩy trang</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Kem tẩy trang</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Nước tẩy trang</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Trang điểm nền</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_2">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_2">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Kem lót</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Kem tạo hiệu ứng</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Kem che khuyết điểm</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Phấn phủ bột</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Trang điểm mắt môi</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_3">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_3">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Son thỏi</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Son dưỡng</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Màu mắt</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Viền mắt</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Chăm sóc cơ thể</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_4">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_4">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Sữa tắm</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Sữa dưỡng thể</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Nước hoa</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Dầu gội,xả</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Dược mỹ phẩm</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_5">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_5">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Dưỡng ẩm da</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Dưỡng trắng da</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Chống lão hóa</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Tẩy tế bào chết</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Sức khỏe - Làm đẹp</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_6">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_6">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Tinh dầu</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Nước tẩy trang</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Thực phẩm làm đẹp</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Nước hoa</a></li>
+              </ul>
+              <li class="nav-item row pl-3">
+                <a class="nav-link text-dark col-md-10" href="">Thực phẩm chức năng</a>
+                <div class="w-15 p-2 col-md-2 btn-toggle-lv-2_7">
+                  <i class="fas fa-angle-right fa float-right"></i>
+                </div>
+              </li>
+              <ul class="navbar-nav ml-3 menu-lv2_7">
+                <li class="nav-item"><a class="nav-link text-dark" href="">Vitamin - khoáng chất</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Chống não hóa</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Sữa dưỡng thể</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="">Dầu tẩy trang</a></li>
+              </ul>
+            </ul>
+            <li class="nav-item"><a class="nav-link text-dark" href="">Tin tức</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="">Tuyển dụng</a></li>
+            <li class="nav-item"><a class="nav-link text-dark" href="">Liên hệ</a></li>
+          </ul>
+        </nav>
+
+        <h3>Thương hiệu</h3>
+        <form action="" class="scrollbar" id="style-1">
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Khác
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Versace
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Burberry
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Dior
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Victoria’s
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              L'Occitane
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              SK-II
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Marc Jacobs
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Picos
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Aroma
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Chloé
+            </label>
+          </div>
+        </form>
+
+        <h3 class="mt-5">Khoảng giá</h3>
+        <form action="">
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Giá dưới 100.000đ
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              100.000đ - 200.000đ
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              200.000đ - 300.000đ
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              300.000đ - 500.000đ
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              500.000đ - 1.000.000đ
+            </label>
+          </div>
+
+          <div class="form-check my-2">
+            <input class="form-check-input" type="checkbox" value="">
+            <label class="form-check-label text-secondary ml-1">
+              Giá trên 1.000.000đ
+            </label>
+          </div>
+        </form>
+
+        <h3 class="mt-5">Màu sắc</h3>
+        <div class="row" style="height: 60px;">
+          <a href=""><div class="bg-primary rounded-circle ml-2" style="height: 30px;width: 30px;"></div></a>
+          <a href=""><div class="bg-secondary rounded-circle ml-2" style="height: 30px;width: 30px;"></div></a>
+          <a href=""><div class="bg-info rounded-circle ml-2" style="height: 30px;width: 30px;"></div></a>
+          <a href=""><div class="bg-warning rounded-circle ml-2" style="height: 30px;width: 30px;"></div></a>
+          <a href=""><div class="bg-danger rounded-circle ml-2" style="height: 30px;width: 30px;"></div></a>
+          <a href=""><div class="bg-success rounded-circle ml-2" style="height: 30px;width: 30px;"></div></a>
+        </div>
+
+        <h3 class="mt-2">Sản phẩm nổi bật</h3>
+        <nav>
+          <ul class="navbar-nav">
+            <li class="nav-item border-bottom">
+              <a class="nav-link" href="">
+                <div class="d-flex">
+                  <div class="">
+                    <img class="img-item" src="./assets/images/dungdichbosonmongtay.jpg" alt="">
+                  </div>
+                  <div class="">
+                    <h6 class="name-item">Dung dịch giúp loại bỏ sơn móng tay</h6>
+                    <span class="price">145,000đ</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item border-bottom mt-3">
+              <a class="nav-link" href="">
+                <div class="d-flex">
+                  <div class="">
+                    <img class="img-item" src="./assets/images/kemchongnangaha.jpg" alt="">
+                  </div>
+                  <div class="">
+                    <h6 class="name-item">Kem chống nắng AHA</h6>
+                    <span class="price">350,000đ</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item border-bottom mt-3">
+              <a class="nav-link" href="">
+                <div class="d-flex">
+                  <div class="">
+                    <img class="img-item" src="./assets/images/kemlotBurberryFeshGlow.jpg" alt="">
+                  </div>
+                  <div class="">
+                    <h6 class="name-item">Kem lót Burberry Fresh Glow</h6>
+                    <span class="price">960,000đ</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item border-bottom mt-3">
+              <a class="nav-link" href="">
+                <div class="d-flex">
+                  <div class="">
+                    <img class="img-item" src="./assets/images/nuochoaCHloe.jpg" alt="">
+                  </div>
+                  <div class="">
+                    <h6 class="name-item">Nước hoa CHloé Eau de Parfum</h6>
+                    <span class="price">1,500,000đ</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="nav-item mt-3">
+              <a class="nav-link" href="">
+                <div class="d-flex">
+                  <div class="">
+                    <img class="img-item" src="./assets/images/nuochoaYvesSaint.jpg" alt="">
+                  </div>
+                  <div class="">
+                    <h6 class="name-item">Nước hoa Yves Saint Laurent Black</h6>
+                    <span class="price">1,350,000đ</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+          <a href="" class="text-dark">Xem thêm <i class="fas fa-angle-right fa"></i></a>
+        </nav>
+      </div>
+
+      <div class="col-md-9">
+        <div class="row d-flex" style="justify-content: space-between;">
+          <div class="col-md-4"><h3>Tất cả sản phẩm</h3></div>
+          <div class="">
+            <form action="">
+              <span>Ưu tiên xem: </span>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">A <i class="fas fa-long-arrow-alt-right"></i> Z</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Z <i class="fas fa-long-arrow-alt-right"></i> A</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Giá tăng dần</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Giá giảm dần</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row card-deck mt-3">
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/product1.jpg" alt="">
+            </a>
+            <h6 class="product__name">Sữa tắm Victoria's Secret quyến rũ</h6>
+            <div class="product__price">
+              <p class="new_price">560,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">thêm vào giỏ hàng</button>
+          
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/product2.jpg" alt="">
+            </a>
+            <h6 class="product__name">Sữa tắm Victoria's Secret quyến rũ</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">2,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">thêm vào giỏ hàng</button>
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/product3.jpg" alt="">
+            </a>
+            <h6 class="product__name">Sữa tắm Victoria's Secret quyến rũ</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <div class="row card-deck mt-4">
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/nuoc_hoa_Gucci_Pour_Homme_5ml.jpg" alt="">
+            </a>
+            <h6 class="product__name">Nước hoa Gucci Pour Home 5ml</h6>
+            <div class="product__price">
+              <p class="new_price">560,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/nuoc_hoa_versace_eros_flame_eau_de_parfum_5ml.jpg" alt="">
+            </a>
+            <h6 class="product__name">Nước hoa versace eros flame eau de parfum 5ml</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">2,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/nuoc_hoa_versace_man_eau_Fraiche.jpg" alt="">
+            </a>
+            <h6 class="product__name">Nước hoa versace man eau Fraiche</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <div class="row card-deck mt-4">
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/nuoc_hoa_versace_pink.jpg" alt="">
+            </a>
+            <h6 class="product__name">Nước hoa versace pink pink pink</h6>
+            <div class="product__price">
+              <p class="new_price">560,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/nuoc_hoa_Versace_yellow_diamond.png" alt="">
+            </a>
+            <h6 class="product__name">Nước hoa versace yellow diamond</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">2,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/nuochoaCHloe.jpg" alt="">
+            </a>
+            <h6 class="product__name">Dầu gội Victoria's Secret quyến rũ</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+
+        <div class="row card-deck mt-4">
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/sap_tay_trang_Cliniue.png" alt="">
+            </a>
+            <h6 class="product__name">Sáp tẩy trang Cliniue supper  200ml</h6>
+            <div class="product__price">
+              <p class="new_price">560,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/serum_duong_da_Olay_regenerist_50ml.png" alt="">
+            </a>
+            <h6 class="product__name">Serum dưỡng da Olay regenerist 50ml</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">2,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          </div>
+
+          <div class="col-md-4 product card">
+            <a href="./demo_sanpham.html">
+              <img class="product__img" src="./assets/images/son_MAC_Chili.jpg" alt="">
+            </a>
+            <h6 class="product__name">Son MAC chilitili red siêu quyến rũ</h6>
+            <div class="product__price">
+              <p class="new_price">650,000đ</p>
+              <p class="old_price">1,000,000đ</p>
+            </div>
+            <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+          </div>
+        </div>
+        <div class="mt-4">
+          <ul class="pagination">
+            <li class="page-item p-1 disabled"><a href="" class="page-link"><i class="fas fa-angle-double-left"></i></a></li>
+            <li class="page-item active p-1"><a href="" class="page-link">1</a></li>
+            <li class="page-item p-1"><a href="" class="page-link">2</a></li>
+            <li class="page-item p-1"><a href="" class="page-link">3</a></li>
+            <li class="page-item p-1"><a href="" class="page-link">4</a></li>
+            <li class="page-item p-1"><a href="" class="page-link">5</a></li>
+            <li class="page-item p-1"><a href="" class="page-link"><i class="fas fa-angle-double-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <footer class="bg-dark py-4">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-5">
+                <h4 class="text-white">Fanpage</h4>
+                <a href=""><i class="icon-facebook rounded fab fa-facebook"></i></a>
+                <a href=""><i class="icon-twitter rounded fab fa-twitter-square"></i></a>
+                <a href=""><i class="icon-google-plus rounded fab fa-google-plus"></i></a>
+                <a href=""><i class="icon-wechat rounded fab fa-weixin"></i></a>
+            </div>
+
+            <div class="col-md-7 rounded">
+                <h4 class="text-white">Đăng ký nhận thông tin</h4>
+                <p class="text-white">Hãy cho chúng tôi email của bạn và bạn sẽ được cập nhật hàng ngày với các sự kiện mới nhất, chi tiết!</p>
+                <div class="bg-white d-flex">
+                    <input class="w-100 border-0 pl-3" type="text" placeholder="Nhập email để đăng ký">
+                    <button class="btn col-md-2" style="background-color: turquoise;">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row pt-3">
+            <div class="col-md-3">
+                <h4 class="text-white">Về chúng tôi</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-map-marker-alt"></i> Thái Nguyên</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-phone"></i> 0368960711</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-envelope"></i> toduckhai001@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Tin tức</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Về chúng tôi</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Tuyển dụng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Giới thiệu cửa hàng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Thời gian làm việc</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Câu hỏi thường gặp</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Hỏi đáp</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Mẹo sử dụng mỹ phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Sản phẩm hot</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Chính sách</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách bảo mật</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách bảo hành</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách vận chuyển</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách đổi hàng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Quy định thanh toán</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    function add_li_hover(x){
+      $(x).addClass("nav-item__after");
+    }
+
+    function remove_li_hover(x){
+        $(x).removeClass("nav-item__after");
+    }
+    $('.menu-lv1').hide();
+    $('.menu-lv2_0').hide();
+    $('.menu-lv2_1').hide();
+    $('.menu-lv2_2').hide();
+    $('.menu-lv2_3').hide();
+    $('.menu-lv2_4').hide();
+    $('.menu-lv2_5').hide();
+    $('.menu-lv2_6').hide();
+    $('.menu-lv2_7').hide();
+    $(document).ready(function( $ ) {
+        $('.counter-value').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        $('.btn-toggle-lv1').click(function(){
+          $('.menu-lv1').toggle();
+        })
+
+        $('.btn-toggle-lv-2_0').click(function(){
+          $('.menu-lv2_0').toggle();
+        })
+
+        $('.btn-toggle-lv-2_1').click(function(){
+          $('.menu-lv2_1').toggle();
+        })
+
+        $('.btn-toggle-lv-2_2').click(function(){
+          $('.menu-lv2_2').toggle();
+        })
+        
+        $('.btn-toggle-lv-2_3').click(function(){
+          $('.menu-lv2_3').toggle();
+        })
+
+        $('.btn-toggle-lv-2_4').click(function(){
+          $('.menu-lv2_4').toggle();
+        })
+
+        $('.btn-toggle-lv-2_5').click(function(){
+          $('.menu-lv2_5').toggle();
+        })
+
+        $('.btn-toggle-lv-2_6').click(function(){
+          $('.menu-lv2_6').toggle();
+        })
+
+        $('.btn-toggle-lv-2_7').click(function(){
+          $('.menu-lv2_7').toggle();
+        })
+    });
+  </script>
+</body>
+</html>

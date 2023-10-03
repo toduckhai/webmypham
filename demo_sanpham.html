@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="\assets\images\logodep.jpg" type="image/x-icon">
+  <title>Sản phẩm</title>
+  <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="http://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
+
+  <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="./assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script> 
+</head>
+<body>
+  <header class="py-3 bg-white fixed-top border-bottom border-dark">
+    <div class="d-flex container align-items-center justify-content-between">
+        <div class="">
+          <a href="index.html">
+            <img class="header__logo" src="./assets/images/logodep.jpg" height="70px" alt="">
+          </a>
+        </div>
+        <nav class="header__menu">
+            <ul class="nav">
+                <li class="nav-item m-1"  onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="index.html">TRANG CHỦ</a></li>
+                <li class="nav-item m-1"><a class="nav-link text-dark nav-item__after" href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li class="nav-item m-1 position-relative header__item_3" onmouseover="add_li_hover(this), show()" onmouseout="remove_li_hover(this), hide()"><a class="nav-link text-dark" href="sanpham.html">SẢN PHẨM <i class="fas fa-caret-down"></i></a>
+                    <div class="position-absolute container bg-white border-dark border mega-content d-none" style="z-index: 3;top: calc(100% + 29px);left: -430%; width: 1200px;animation: Growth ease-in .3s;">
+                        <div class="row py-4 px-1">
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Dưỡng da</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Mặt nạ</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem dưỡng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem chống nắng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Xịt khoáng</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Làm sạch</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa rửa mặt</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu tẩy trang</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem tẩy trắng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước tẩy trắng</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Trang điểm nền</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Kem lót</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem tạo hiệu ứng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Kem che khuyết điểm</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Phấn phủ bột</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Trang điểm mắt môi</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Son thỏi</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Son dưỡng</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Màu mắt</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Viền mắt</a></li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+            
+                                <div class="row mt-3">
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Chăm sóc cơ thể</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Sửa tắm</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa dưỡng thể</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước hoa</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu gội,xả</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Dược mỹ phẩm</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Dưỡng ẩm da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dưỡng trắng da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Chống lão hóa da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Tẩy tế bào chết</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Sức khỏe - Làm đẹp</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Tinh dầu</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước tẩy trang</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Thực phẩm làm đẹp</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Nước hoa</a></li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <a href=""><h6>Thực phẩm chức năng</h6></a>
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item"><a class="nav-link" href="">Vitamin - Khoáng chất</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Chống não hóa da</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Sữa dưỡng thể</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="">Dầu tẩy trang</a></li>
+                                        </ul>
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <a href=""><img src="./assets/images/banner_menu_1.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="tintuc.html">TIN TỨC</a></li>
+                <li class="nav-item m-1" onmouseover="add_li_hover(this)" onmouseout="remove_li_hover(this)"><a class="nav-link text-dark" href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+        <div class="row">
+            <div class="search p-3 col-md-4 position-relative">
+                <i class="fas fa-search icon-search"></i>
+                <div class="position-absolute input-search">
+                    <form action="">
+                        <input class="form-control" type="text" placeholder="Nhập từ khóa tìm kiếm">
+                    </form>
+                </div>
+            </div>
+            <div class="user p-3 col-md-4 position-relative">
+                <i class="fas fa-user icon-user"></i>
+                <div class="auth-form nav position-absolute">
+                    <ul class="navbar-nav m-auto w-100">
+                      <li class="nav-item"><a class="nav-link text-dark pl-1" href="register.html"><i class="icon-plus fas fa-user-plus"></i> Đăng ký</a></li>
+                      <li class="nav-item"><a class="nav-link text-dark pl-1" href="login.html"><i class="far fa-user-circle"></i> Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bag p-3 col-md-4 position-relative">
+                <i class="fas fa-shopping-bag icon-bag"><sup>0</sup></i>
+                <div class="no_card position-absolute">
+                    <figure class="border border">
+                        <img src="./assets/images/no-cart.png" alt="">
+                        <figcaption class="text-center bg-white p-2">Chưa có sản phẩm</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+  </header>
+
+  <div class="container-fluid p-3" style="margin-top: 102px;background-color: #f0f0f0;">
+    <div class="container">
+      <h5 class=""><a href="index.html">Trang chủ</a> / sản phẩm / <span style="color: red;">Nước hoa gucci bloom acua</h5>
+    </div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="border border-danger" src="./assets/images/gucci_bloom_acua.jpg" alt="">
+      </div>
+
+      <div class="col-md-6">
+        <h1>Nước hoa gucci bloom acua</h1>
+        <p>Thương hiệu: <span style="color: red;"> Gucci</span> | Tình trạng: <span style="color: red;"> Còn hàng</span></p>
+        <h1 class="text-danger">850.000 VNĐ</h1>
+
+        <div>
+          <p><span class="font-weight-bold">-Thương hiệu:</span> Gucci</p>
+          <p><span class="font-weight-bold">-Xuất xứ: </span>Ý</p>
+          <p><span class="font-weight-bold">-Phong cách: </span>Thanh lịch, sang trọng, tươi mới</p>
+          <p><span class="font-weight-bold">-Nhóm hương: </span>Hoa Huệ Trắng, Hoa Nhài, Hoa Kim Ngân</p>
+          <p><span class="font-weight-bold">-Độl lưu hương: </span>4-6 giờ</p>
+          <p><span class="font-weight-bold">-Thời điểm khuyên dùng: </span>cả ngày, tone mùi hoa cỏ tươi mát nên rất thích hợp để dùng trong mùa xuân hè. </p>
+        </div>
+
+        <div class="row ml-1">
+          <p class="mt-2">Số lượng: 
+            <div class="ml-3 pt-2" style="border: 1px solid #ccc; border-radius: 10px;cursor: pointer;">
+              <button class="p-3 giam">-</button> <span class="so_luong">1</span> <button class="p-3 tang">+</button>
+            </div>
+          </p>
+        </div>
+
+        <button class="btn btn-success mt-3">Thêm vào giỏ hàng</button>
+      </div>
+    </div>
+
+    <div class="mt-5">
+      <h3 class="text-center">Mô tả sản phẩm</h3>
+      <div class="">
+        <p>SỮA TẮM GỘI TOÀN THÂN NƯỚC HOA VERSACE POUR HOMME HAIR & BODY SHAMPOO 250ML
+          <br><br>
+          Versace Pour Homme là sự pha trộn các thành phần tinh chất có nguồn gốc Địa Trung Hải với hỗn hợp hương thơm hàng đầu rất phù hợp cho nam giới ngày nay: đó là những người đàn ông tri thức và tự tin, sống hài hòa với thế giới tự nhiên. Thông qua hương thơm đầy nam tính, dứt khoát, Versace Pour Homme liên kết sức mạnh và sự say mê để tạo nên một người đàn ông năng động và thành đạt.
+          <br><br>
+          Ngoài nước hoa Versace Pour Homme được rất nhiều chàng ưa chuộng, Versace còn mang đến sản phẩm sữa tắm gội toàn thân cùng dòng, để các chàng luôn tự tin với mùi hương quyến rũ mọi lúc mọi nơi.
+          <br><br>
+          Sữa tắm gội toàn thân nước hoa Versace Pour Homme Hair & Body Shampoo với hương thơm nam tính từ chanh vàng, cam Bergamot, lan dạ hương, gỗ tuyết tùng, phong lữ, mang đến sự sảng khoái tuyệt vời. Đặc biệt, sữa tắm gội Versace không gây nhờn rít. Các chàng sẽ được cảm nhận làn da mát mẻ với mùi hương nhẹ nhàng suốt cả ngày dài.
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row my-2 text-white bg-danger">
+          <div class="col-md-6 title ">
+              <h3 class="">SẢN PHẨM LIÊN QUAN</h3>
+          </div>
+          <div class="col-md-6 mt-3">
+              <a href="sanpham.html" class="float-right text-white">Xem tất cả</a>
+          </div>
+      </div>
+      <div class="">
+          <div class="owl-carousel owl-theme">
+              <div class="item border">
+                  <div class="product px-2">
+                      <a href="">
+                        <img class="product-img" src="./assets/images/son_MAC_Chili.jpg" alt="">
+                      </a>
+                      <h6 class="product__name">Son MAC Chili</h6>
+                      <div class="product__price">
+                        <p class="new_price">960,000đ</p>
+                        <p class="old_price">1,000,000đ</p>
+                      </div>
+                      <button class="btn btn-success mt-3 w-100">Thêm vào giỏ hàng</button>
+                    </div>
+              </div>
+
+              <div class="item border">
+                  <div class="product px-2">
+                      <a href="">
+                        <img class="product-img" src="./assets/images/son_mac_407.png" alt="">
+                      </a>
+                      <h6 class="product__name">Son MAC 407</h6>
+                      <div class="product__price">
+                        <p class="new_price">2,320,000đ</p>
+                        <p class="old_price">3,000,000đ</p>
+                      </div>
+                      <button class="btn btn-success mt-3 w-100">Thêm vào giỏ hàng</button>
+                    </div>
+              </div>
+
+              <div class="item border">
+                  <div class="product px-2">
+                      <a href="">
+                        <img class="product-img" src="./assets/images/son_gucci_rouge.jpg" alt="">
+                      </a>
+                      <h6 class="product__name">Son GUCCI rouge</h6>
+                      <div class="product__price">
+                        <p class="new_price">990,000đ</p>
+                        <p class="old_price">1,000,000đ</p>
+                      </div>
+                      <button class="btn btn-success mt-3 w-100">Thêm vào giỏ hàng</button>
+                    </div>
+              </div>
+
+              <div class="item border">
+                  <div class="product px-2">
+                      <a href="">
+                        <img class="product-img" src="./assets/images/son_gucci_gold.jpg" alt="">
+                      </a>
+                      <h6 class="product__name">Son GUCCI gold</h6>
+                      <div class="product__price">
+                        <p class="new_price">9,960,000đ</p>
+                        <p class="old_price">10,000,000đ</p>
+                      </div>
+                      <button class="btn btn-success mt-3 w-100">Thêm vào giỏ hàng</button>
+                    </div>
+              </div>
+
+              <div class="item border">
+                  <div class="product px-2">
+                      <a href="">
+                        <img class="product-img" src="./assets/images/son_gucci_2020.jpg" alt="">
+                      </a>
+                      <h6 class="product__name">Son Gucci 2020</h6>
+                      <div class="product__price">
+                        <p class="new_price">998,000đ</p>
+                        <p class="old_price">1,000,000đ</p>
+                      </div>
+                      <button class="btn btn-success mt-3 w-100">Thêm vào giỏ hàng</button>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+  <footer class="bg-dark py-4">
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-md-5">
+                <h4 class="text-white">Fanpage</h4>
+                <a href=""><i class="icon-facebook rounded fab fa-facebook"></i></a>
+                <a href=""><i class="icon-twitter rounded fab fa-twitter-square"></i></a>
+                <a href=""><i class="icon-google-plus rounded fab fa-google-plus"></i></a>
+                <a href=""><i class="icon-wechat rounded fab fa-weixin"></i></a>
+            </div>
+
+            <div class="col-md-7 rounded">
+                <h4 class="text-white">Đăng ký nhận thông tin</h4>
+                <p class="text-white">Hãy cho chúng tôi email của bạn và bạn sẽ được cập nhật hàng ngày với các sự kiện mới nhất, chi tiết!</p>
+                <div class="bg-white d-flex">
+                    <input class="w-100 border-0 pl-3" type="text" placeholder="Nhập email để đăng ký">
+                    <button class="btn col-md-2" style="background-color: turquoise;">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row pt-3">
+            <div class="col-md-3">
+                <h4 class="text-white">Về chúng tôi</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-map-marker-alt"></i> Thái Nguyên</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-phone"></i> 0368960711</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#"><i class="fas fa-envelope"></i> toduckhai001@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Tin tức</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Về chúng tôi</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Tuyển dụng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Giới thiệu chung</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Giới thiệu cửa hàng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Thời gian làm việc</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Câu hỏi thường gặp</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Hỏi đáp</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Khuyến mãi</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Mẹo sử dụng mỹ phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Sản phẩm hot</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4 class="text-white">Chính sách</h4>
+                <ul class="navbar-nav footer__menu">
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách bảo mật</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách bảo hành</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách vận chuyển</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Chính sách đổi hàng</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="">Quy định thanh toán</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+
+    function tang() {
+      var x = $(".so_luong").text();
+      x++;
+      $(".so_luong").text(x);
+    }
+
+    function giam() {
+      var x = $(".so_luong").text();
+      if(x > 1){
+        x--;
+        $(".so_luong").text(x);
+      }
+    }
+
+    function add_li_hover(x){
+      $(x).addClass("nav-item__after");
+    }
+
+    function remove_li_hover(x){
+        $(x).removeClass("nav-item__after");
+    }
+
+    function hide(){
+      $(".mega-content").addClass("d-none");
+    }
+
+    function show(){
+        $(".mega-content").removeClass("d-none");
+    }
+
+    $(".tang").click(tang);
+    $(".giam").click(giam);
+
+    var owl = $('.owl-carousel');
+        owl.owlCarousel({
+          items:4,
+          loop:true,
+          margin:10, 
+        }); 
+  </script>
+</body>
+</html>
